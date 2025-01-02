@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Notes</h1>
+    <h2>Made by Andreykuro</h2>
+    <div class="sidebar">
+        <h2>Subjects</h2>
+        <input type="text" id="subjectInput" placeholder="Add Subject">
+        <button onclick="addSubject()">Add</button>
+        <ul id="subjectList"></ul>
+        <button onclick="location.href='index.html'">Back to Home</button>
+        <button onclick="location.href='todo.html'">Go to To-Do List</button>
+    </div>
+    <div class="main">
+        <div class="notes">
+            <h3>Notes</h3>
+            <textarea id="noteInput" placeholder="Write your notes here..."></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <div id="notesDisplay"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
